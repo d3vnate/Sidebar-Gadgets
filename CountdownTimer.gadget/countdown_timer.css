@@ -1,0 +1,21 @@
+body {
+	width:130px;
+	height:35px;
+  color: #FFF;
+  font-size: 11px;
+  font-family: Verdana;
+  margin: 3px;
+  background-color: #000;
+}
+
+#progress_bar {
+  margin-top: 14px;
+  width:0px;
+  border-top:1px solid #0f0;
+}
+
+#countdown_tick {
+  font-size: 14px;
+  margin-left: 4px;
+  color: #ccc;
+}

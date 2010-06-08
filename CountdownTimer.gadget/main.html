@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Countdown Timer</title>  
+    <link href="countdown_timer.css" rel="stylesheet" type="text/css" />  
+    <script type="text/javascript" src="countdown_timer.js"></script>
+    <script type="text/javascript" src="global.js"></script>
+</head>
+
+<body onload="init();">
+
+  <div style="float:right;">
+    <img id="play" src="images/play.png" width="12" height="12" title="Play/Pause" onclick="startCountdown();">
+    <img id="restart" src="images/restart.png" width="12" height="12" title="Reset" onclick="resetCountdown();">
+  </div>
+  <span id="countdown_block"></span> <span id="countdown_tick">.</span>
+  <div id="progress_bar"></div>
+
+  <g:background id="background" src="images\black_back.png" style="z-index: -1; position: absolute; top: 0; left: 0;"></g:background> 
+
+</body>
+</html>
