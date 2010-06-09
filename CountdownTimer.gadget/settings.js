@@ -1,10 +1,11 @@
+/*
+ - Countdown Timer Gadget
+ -  by Nate Vogel June 2010
+ -
+ - http://funtothinkabout.com
+*/
 System.Gadget.onSettingsClosing = SettingsClosing;
 
-// --------------------------------------------------------------------
-// Handle the Settings dialog closing event.
-// Parameters:
-// event - event arguments.
-// --------------------------------------------------------------------
 function SettingsClosing(event)
 {
   // Save the settings if the user clicked OK.

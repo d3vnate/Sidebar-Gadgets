@@ -15,7 +15,8 @@ body {
 }
 
 #countdown_tick {
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 4px;
   color: #ccc;
+  font-weight: bolder;
 }

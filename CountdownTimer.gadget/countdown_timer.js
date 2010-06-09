@@ -1,3 +1,9 @@
+/*
+ - Countdown Timer Gadget
+ -  by Nate Vogel June 2010
+ -
+ - http://funtothinkabout.com
+*/
 System.Gadget.settingsUI = "settings.html";
 System.Gadget.onSettingsClosed = onSettingsClosed;
 
@@ -48,11 +54,19 @@ function updateProgressBar()
   document.getElementById('progress_bar').style.width = width + "%";
   
   var tick = document.getElementById('countdown_tick');
+  /*
   if (tick.style.visibility == '' || tick.style.visibility == 'visible') {
     tick.style.visibility = 'hidden';
   } else {
     tick.style.visibility = 'visible';
   }
+  */
+
+  if (tick.style.color == '#666') {
+    tick.style.color = '#ccc';
+  } else {
+    tick.style.color = '#666';
+  } 
 }
 function timesUp(i)
 {
