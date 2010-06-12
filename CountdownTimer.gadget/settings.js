@@ -73,9 +73,3 @@ function loadSettings()
   return;
 }
 
-function loadDefaults()
-{
-  countdown_min = 30;
-  presets_list_values = "1||5||15||30||60";
-  num_audible_alarm = 2;
-}

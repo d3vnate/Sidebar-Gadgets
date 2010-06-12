@@ -9,10 +9,8 @@ System.Gadget.onSettingsClosed = onSettingsClosed;
 
 var seconds = 0;
 var countdown_timer = null;
-var debug_mode = 1;
+var debug_mode = 0;
 
-var countdown_min = 30;
-var max_alarm_notifies = 2;
 
 function init()
 {
@@ -41,7 +39,9 @@ function countdown()
 {
   if (seconds > 0) {
     seconds -= 1;
-    document.getElementById('countdown_block').innerHTML = seconds > 60 ? (Math.floor(seconds / 60) + " MIN") : (seconds + " SEC");
+    var time_statement = seconds > 60 ? (Math.floor(seconds / 60) + " MIN") : (seconds + " SEC");
+    document.getElementById('countdown_block').innerHTML = time_statement;
+    document.getElementById('countdown_block').title = seconds + " seconds remain";
     updateProgressBar();
     countdown_timer = setTimeout('countdown()', 1000);
   } else {
@@ -54,13 +54,6 @@ function updateProgressBar()
   document.getElementById('progress_bar').style.width = width + "%";
   
   var tick = document.getElementById('countdown_tick');
-  /*
-  if (tick.style.visibility == '' || tick.style.visibility == 'visible') {
-    tick.style.visibility = 'hidden';
-  } else {
-    tick.style.visibility = 'visible';
-  }
-  */
 
   if (tick.style.color == '#666') {
     tick.style.color = '#ccc';

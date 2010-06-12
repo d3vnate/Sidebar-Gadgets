@@ -1,0 +1,46 @@
+-- ==========================
+ - Countdown Timer Gadget
+ - - by Nate Vogel, June 2010
+ -
+ - http://funtothinkabout.com
+-- ==========================
+
+Install:
+
+ Windows 7:
+ * unzip the CountdownTimer_gadget.zip into: 
+    %LOCALAPPDATA%\Microsoft\Windows Sidebar\Gadgets
+    
+ * hit the Windows start button and type "add gadgets", then enter when the 
+   appropriate control panel appears at the top of the search results 
+   * alternatively, right click on a desktop gadget and click "Add Gadgets..."
+ * you should see Countdown Timer listed, right click and Add
+
+ 
+  Background:
+ 
+  The Countdown timer gadget was created as a learning project and because I needed 
+something to remind me to take breaks throughout the day.  I wanted something that 
+functioned and appeared as simply as the gnome-timer applet.  Upon undiscovery,
+motivation for Countdown Timer was born.
+
+  The concept is very basic - countdown from a preset time and alert when time is up.
+Thie gadget is more akin to a kitchen timer than a countdown until my birthday
+type timer.  However, the gadget will happily countdown 135971947923 minutes in
+case that amount of time happens to be value to you.
+
+
+  Settings:
+
+  The default countdown is 30 minutes.  The primary display has play/pause and 
+restart buttons.  Settings include Custom Countdown, which is set in minutes,
+with examples like 11 or 66 minutes.  There's also list of preset times, all are
+also in minutes.  Lastly, the number of alarm sounds configuration defines how
+many times the audible alarm sounds.
+
+
+  (Slightly) Advanced Settings:
+
+  To change the gadget defaults or if you wish to add or remove Presets, edit the 
+global.js file. The presets list values are delimitated by two pipe characters "||"
+so add or remove accordingly.

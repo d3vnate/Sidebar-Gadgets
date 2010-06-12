@@ -9,14 +9,20 @@ body {
 }
 
 #progress_bar {
-  margin-top: 14px;
+  margin-top: 12px;
   width:0px;
-  border-top:1px solid #0f0;
+  line-height:2px;
+  background-color: #0C0;
+  border:1px solid #090;
 }
 
 #countdown_tick {
   font-size: 12px;
-  margin-left: 4px;
+  margin: 0 1px 0 1px;
   color: #ccc;
   font-weight: bolder;
+}
+
+img#restart {
+  margin-left: 6px;
 }
