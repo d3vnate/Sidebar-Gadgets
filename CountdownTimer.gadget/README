@@ -21,26 +21,29 @@ Install:
  
   The Countdown timer gadget was created as a learning project and because I needed 
 something to remind me to take breaks throughout the day.  I wanted something that 
-functioned and appeared as simply as the gnome-timer applet.  Upon undiscovery,
-motivation for Countdown Timer was born.
+had a tiny footprint both in appearance and function, similar to the gnome-timer
+applet (for Linux desktops).
 
-  The concept is very basic - countdown from a preset time and alert when time is up.
-Thie gadget is more akin to a kitchen timer than a countdown until my birthday
-type timer.  However, the gadget will happily countdown 135971947923 minutes in
-case that amount of time happens to be value to you.
+  The concept is very basic - countdown from a preset time (in minutes) and alert 
+when time is up. This gadget is more akin to a kitchen timer than a countdown-
+until-my-birthday type timer.  However, the gadget will happily countdown 
+135971947923 minutes in case that amount of time happens to be of value to you.
 
 
   Settings:
-
-  The default countdown is 30 minutes.  The primary display has play/pause and 
-restart buttons.  Settings include Custom Countdown, which is set in minutes,
-with examples like 11 or 66 minutes.  There's also list of preset times, all are
-also in minutes.  Lastly, the number of alarm sounds configuration defines how
-many times the audible alarm sounds.
-
+  
+  As with any quality gadget or applet, this one is configurable.  The Custom 
+Countdown setting (in minutes), if set, will override the default of 30 minutes 
+and any Preset Timers selection (also in minutes).  Lastly, the Number of Alarm 
+Sounds option defines how many times the audible alarm will sound when time is up.  
+Putting a 0 in this option field disables it.
 
   (Slightly) Advanced Settings:
 
   To change the gadget defaults or if you wish to add or remove Presets, edit the 
 global.js file. The presets list values are delimitated by two pipe characters "||"
 so add or remove accordingly.
+
+
+Thanks for using it!
+-- Nate
