@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <gadget>
   <name>Countdown Timer</name>
-  <namespace>naraku.gadgets</namespace>
+  <namespace>ftta.gadgets</namespace>
   <version>1.0.0.0</version>
   <author name="Nate Vogel">
-    <info url="http://naraku.net" text="naraku.net"/>
+    <info url="http://funtothinkabout.com" text="FTTA"/>
   </author>
   <copyright>
     &#169; 2010
   </copyright>
   <description>
-    Simple Countdown Timer
+    A Simple, Configurable Countdown Timer
   </description>
   <icons>
     <icon src="icon.png"/>

@@ -7,16 +7,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>Countdown Timer</title>  
-    <link href="countdown_timer.css" rel="stylesheet" type="text/css" />  
-    <script type="text/javascript" src="countdown_timer.js"></script>
+    <link href="countdown_timer.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="global.js"></script>
+    <script type="text/javascript" src="countdown_timer.js"></script>
 </head>
 
-<body onload="init();">
+<body onload="FTTA.countdownTimer.main.init();">
 
-  <div style="float:right;">
-    <img id="play" src="images/play.png" width="14" height="12" title="Play/Pause" onclick="startCountdown();">
-    <img id="restart" src="images/restart.png" width="14" height="12" title="Restart" onclick="resetCountdown();">
+  <div id="controls">
+    <img id="play" src="images/play.png" title="Play/Pause" onclick="FTTA.countdownTimer.main.countdown.start();">
+    <img id="restart" src="images/restart.png" title="Reset" onclick="FTTA.countdownTimer.main.countdown.reset();">
   </div>
   <span id="countdown_tick">:</span><span id="countdown_block"></span>
   <div id="progress_bar">&nbsp;</div>

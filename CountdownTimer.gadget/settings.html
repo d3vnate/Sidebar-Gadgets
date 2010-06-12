@@ -7,12 +7,12 @@
 <html>
 <head>
   <title>Countdown Timer Settings</title>
-  <script type="text/javascript" src="settings.js"></script>
   <script type="text/javascript" src="global.js"></script>
+  <script type="text/javascript" src="settings.js"></script>
   <link rel="stylesheet" href="settings.css">  
 </head>
 
-<body onload="loadSettings();">
+<body onload="FTTA.countdownTimer.settings.getSettings();">
   <strong>Custom Countdown</strong>
   <input type="text" name="custom_countdown_min" value="" />
   
@@ -24,7 +24,7 @@
   <input type="text" size="1" name="num_audible_alarm" id="num_audible_alarm" />
   
   <br /><br />
-  For Tips and About Visit:<br />
+  For Tips and More, Visit:<br />
   <strong><a href="http://funtothinkabout.com">Fun To Think About</a></strong>
 </body>
 </html>

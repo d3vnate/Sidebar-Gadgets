@@ -4,11 +4,10 @@
  -
  - http://funtothinkabout.com
 */
-System.Gadget.onSettingsClosing = SettingsClosing;
+System.Gadget.onSettingsClosing = FTTA.countdownTimer.settings.SettingsClosing;
 
-function SettingsClosing(event)
+function FTTA.countdownTimer.settings.SettingsClosing(event)
 {
-  // Save the settings if the user clicked OK.
   if (event.closeAction == event.Action.commit)
   {
     System.Gadget.Settings.write("countdown_first_run", false); 
@@ -41,35 +40,26 @@ function SettingsClosing(event)
   event.cancel = false;
 }
 
-var countdown_min;
-var presets_list_values;
-var num_audible_alarm;
-function loadSettings()
+FTTA.countdownTimer.settings.getSettings = function()
 {  
-  if (System.Gadget.Settings.read("countdown_first_run") == '') {
-    loadDefaults();
-  } else {
-    countdown_min = System.Gadget.Settings.read("countdown_minutes");
-    presets_list_values = System.Gadget.Settings.read("countdown_presets");
-    num_audible_alarm = System.Gadget.Settings.read("countdown_alarm_notifies");
-  }
+  FTTA.countdownTimer.global.getSettings();
   
   var presets_list = document.getElementById('preset_list');
-  presets_list_values = presets_list_values.split("||");
+  presets_list_values = FTTA.countdownTimer.global.presets_list_values.split("||");
+  
   // populate countdown minute presets
   for (i = 0; i < presets_list_values.length; i++) {
     var option = document.createElement('option');
     option.appendChild(document.createTextNode(presets_list_values[i]));
     option.setAttribute("value", presets_list_values[i]);
-    if (countdown_min == presets_list_values[i]) {
+    if (FTTA.countdownTimer.global.countdown_min == presets_list_values[i]) {
       option.setAttribute("selected", "selected");
     }
     presets_list.appendChild(option);
   }
   
   // populate number of alarm sounds
-  document.getElementById("num_audible_alarm").value = num_audible_alarm;
+  document.getElementById("num_audible_alarm").value = FTTA.countdownTimer.global.num_audible_alarm;
   
   return;
 }
-
